@@ -37,7 +37,6 @@ import { ContextMenuPlugin } from "@/components/editor/plugins/context-menu-plug
 import { DragDropPastePlugin } from "@/components/editor/plugins/drag-drop-paste-plugin";
 import { AutoEmbedPlugin } from "@/components/editor/plugins/embeds/auto-embed-plugin";
 import { EmojiPickerPlugin } from "@/components/editor/plugins/emoji-picker-plugin";
-import { EmojisPlugin } from "@/components/editor/plugins/emojis-plugin";
 import { EquationsPlugin } from "@/components/editor/plugins/equations-plugin";
 import { FloatingLinkEditorPlugin } from "@/components/editor/plugins/floating-link-editor-plugin";
 import { FloatingTextFormatToolbarPlugin } from "@/components/editor/plugins/floating-text-format-plugin";
@@ -72,7 +71,6 @@ import { CodePickerPlugin } from "@/components/editor/plugins/picker/code-picker
 import { DividerPickerPlugin } from "@/components/editor/plugins/picker/divider-picker-plugin";
 import { PageBreakPickerPlugin } from "@/components/editor/plugins/picker/page-break-picker-plugin";
 import { ImagePickerPlugin } from "@/components/editor/plugins/picker/image-picker-plugin";
-import { ExcalidrawPickerPlugin } from "@/components/editor/plugins/picker/excalidraw-picker-plugin";
 import { PollPickerPlugin } from "@/components/editor/plugins/picker/poll-picker-plugin";
 import { EquationPickerPlugin } from "@/components/editor/plugins/picker/equation-picker-plugin";
 import { CollapsiblePickerPlugin } from "@/components/editor/plugins/picker/collapsible-picker-plugin";
@@ -153,7 +151,7 @@ export function Plugins({}) {
         <MentionsPlugin />
         <PageBreakPlugin />
         <KeywordsPlugin />
-        <EmojisPlugin />
+      
         <ImagesPlugin />
         <InlineImagePlugin />
         <TableCellResizerPlugin />
@@ -204,7 +202,6 @@ export function Plugins({}) {
             CodePickerPlugin(),
             DividerPickerPlugin(),
             PageBreakPickerPlugin(),
-            ExcalidrawPickerPlugin(),
             PollPickerPlugin(),
             EmbedsPickerPlugin({ embed: "figma" }),
             EmbedsPickerPlugin({ embed: "tweet" }),

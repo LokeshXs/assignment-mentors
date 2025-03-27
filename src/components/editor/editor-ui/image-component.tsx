@@ -40,12 +40,10 @@ import {
   TextNode,
   createCommand,
 } from 'lexical'
-
-import { EmojiNode } from '@/components/editor/nodes/emoji-node'
 import { $isImageNode } from '@/components/editor/nodes/image-node'
 import { KeywordNode } from '@/components/editor/nodes/keyword-node'
 // import brokenImage from '@/registry/default/editor/images/image-broken.svg';
-import { EmojisPlugin } from '@/components/editor/plugins/emojis-plugin'
+
 import { KeywordsPlugin } from '@/components/editor/plugins/keywords-plugin'
 import { LinkPlugin } from '@/components/editor/plugins/link-plugin'
 import { MentionsPlugin } from '@/components/editor/plugins/mentions-plugin'
@@ -412,7 +410,6 @@ export default function ImageComponent({
                 LineBreakNode,
                 ParagraphNode,
                 LinkNode,
-                EmojiNode,
                 HashtagNode,
                 KeywordNode,
               ]}
@@ -420,7 +417,7 @@ export default function ImageComponent({
               <AutoFocusPlugin />
               <MentionsPlugin />
               <LinkPlugin />
-              <EmojisPlugin />
+             
               <HashtagPlugin />
               <KeywordsPlugin />
               <HistoryPlugin />
